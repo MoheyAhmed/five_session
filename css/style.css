@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.back .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 8px;
+}   
+
+.back .container .card {
+    height: 390px;
+    text-align: left;
+    padding-left: 40px;
+    width: 250px;
+}
+
+
+.back .container .card img{
+    padding-top: 25px;
+    padding-bottom: 30PX;
+}
+
+.back .container .card h3{
+    Font-size: 25px;
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 25px;
+    font-family: 'Lexend Deca';
+}
+
+
+.back .container .card p{
+    Font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 25px;
+    font-family: 'Lexend Deca';
+    width: 200px;
+    line-height: 25px;
+}
+
+.back .container .card1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+.back .container .card1 button{
+    color: hsl(31, 77%, 52%)
+}
+
+.back .container .card2{
+    background-color: hsl(184, 100%, 22%);
+}
+.back .container .card2 button{
+    color: hsl(184, 100%, 22%);
+}
+
+.back .container .card3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom: 8px;
+}
+.back .container .card3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+.back .container .card button{
+    margin-top: 25px;
+    padding: 11px 35px;
+    font-size: 13px;
+    border-radius: 20px;
+    font-family:  sans-serif;
+}
+
+.back .container .card1 button:hover{
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    border-color: white;
+}
+.back .container .card2 button:hover{
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border-color: white;
+}
+.back .container .card3 button:hover{
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+    border-color: white;
+}
+
+
+@media(max-width:860px){
+    .back {
+        height: auto;
+    }
+    .back .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin:8px 0px;
+    }
+    .back .container .card1{
+        border-radius: 10px 0px 0px 0px;
+    }
+    .back .container .card2{
+        border-radius: 0px 10px 0px 0px;
+    }
+    .back .container .card3{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media(max-width:600px){
+    .back {
+        height: auto;
+        width: auto;
+    }
+    .back .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    .back .container .card{
+        width: auto;
+    }
+    .back .container .card1{
+        border-radius: 10px 0px 0px 0px;
+    }
+    .back .container .card2{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .back .container .card3{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+
+@media(max-width:420px){
+    .back {
+        height: auto;
+    }
+    .back .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .back .container .card{
+        width: auto;
+    }
+    .back .container .card1{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .back .container .card2{
+        border-radius: 0px 0px 0px 0px;
+    }
+    .back .container .card3{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
